@@ -1,0 +1,11 @@
+en:
+  lita:
+    handlers:
+      catme:
+        help:
+          cat_me: Receive a random cat image
+          cat_bomb: Receive N a random cat image (max 20)
+          cat_categories: List all available categories
+          cat_with_category: Receive a cat in the given category
+        cat_with_category:
+          unrecognized_category: Enter a valid category (type "cat categories" for a list of valid categories)
