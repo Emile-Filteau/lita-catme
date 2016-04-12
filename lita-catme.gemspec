@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["emile.filteau@gmail.com"]
   spec.description   = %q(A lita handler that fetch random cat images)
   spec.summary       = %q(A lita handler that fetch random cat images)
-  spec.homepage      = "github.com/Emile-Filteau/lita-catme"
+  spec.homepage      = "https://github.com/Emile-Filteau/lita-catme"
   spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
