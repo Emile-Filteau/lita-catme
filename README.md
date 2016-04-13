@@ -1,6 +1,7 @@
 # lita-catme
 
 [![Build Status](https://travis-ci.org/Emile-Filteau/lita-catme.png?branch=master)](https://travis-ci.org/Emile-Filteau/lita-catme)
+[![Coverage Status](https://coveralls.io/repos/github/Emile-Filteau/lita-catme/badge.svg?branch=master)](https://coveralls.io/github/Emile-Filteau/lita-catme?branch=master)
 
 Lita handler that provides several commands to fetch random cat images from the cat api.
 
