@@ -6,7 +6,7 @@ module Lita
       route(/^cat( me)?$/i, :cat_me, command: true, help: { 'cat me' => t('help.cat_me') })
       route(/^cat bomb( (\d+))?$/i, :cat_bomb, command: true, help: { 'cat bomb N' => t('help.cat_bomb') })
       route(/^cat categories$/i, :cat_categories, command: true, help: { 'cat categories' => t('help.cat_categories') })
-      route(/^cat( me)? (with|in)( (\w+))?$/i, :cat_with_category, command: true, help: { 'cat (with|in) category' => t('help.cat_with_catgory') })
+      route(/^cat( me)? (with|in)( (\w+))?$/i, :cat_with_category, command: true, help: { 'cat (with|in) category' => t('help.cat_with_category') })
 
       def cat_me(response)
         response.reply(Cat.fetch.first.url)
