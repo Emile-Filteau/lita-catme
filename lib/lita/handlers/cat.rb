@@ -2,7 +2,7 @@
 module Lita
   module Handlers
     class Cat
-      BASE_URL = 'http://thecatapi.com/api'.freeze
+      BASE_URL = 'http://api.thecatapi.com/api'.freeze
       attr_accessor :url
 
       class << self

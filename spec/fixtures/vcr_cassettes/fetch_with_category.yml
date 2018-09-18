@@ -1,54 +1,53 @@
----
 http_interactions:
-- request:
-    method: get
-    uri: http://thecatapi.com/api/images/get?category=boxes&format=xml
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 12 Apr 2016 16:15:49 GMT
-      Server:
-      - Apache
-      X-Powered-By:
-      - PHP/5.4.45
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Transfer-Encoding:
-      - chunked
-      Content-Type:
-      - text/xml
-    body:
-      encoding: UTF-8
-      string: |
-        <?xml version="1.0"?>
-        <response>
-          <data>
-            <images>
-              <image>
-                <url>http://25.media.tumblr.com/tumblr_lwwd01DBVo1r0mbi6o1_1280.jpg</url>
-                <id>f6</id>
-                <source_url>http://thecatapi.com/?id=f6</source_url>
-              </image>
-            </images>
-          </data>
-        </response>
-    http_version: 
-  recorded_at: Tue, 12 Apr 2016 16:15:49 GMT
+  - request:
+      method: get
+      uri: http://api.thecatapi.com/api/images/get?category=boxes&format=xml
+      body:
+        encoding: US-ASCII
+        string: ""
+      headers:
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - "*/*"
+        User-Agent:
+          - Ruby
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Date:
+          - Tue, 12 Apr 2016 16:15:49 GMT
+        Server:
+          - Apache
+        X-Powered-By:
+          - PHP/5.4.45
+        Access-Control-Allow-Origin:
+          - "*"
+        Access-Control-Allow-Methods:
+          - GET, POST
+        Access-Control-Allow-Headers:
+          - X-Requested-With
+        Transfer-Encoding:
+          - chunked
+        Content-Type:
+          - text/xml
+      body:
+        encoding: UTF-8
+        string: |
+          <?xml version="1.0"?>
+          <response>
+            <data>
+              <images>
+                <image>
+                  <url>http://25.media.tumblr.com/tumblr_lwwd01DBVo1r0mbi6o1_1280.jpg</url>
+                  <id>f6</id>
+                  <source_url>http://thecatapi.com/?id=f6</source_url>
+                </image>
+              </images>
+            </data>
+          </response>
+      ? http_version
+    recorded_at: Tue, 12 Apr 2016 16:15:49 GMT
 recorded_with: VCR 3.0.1
