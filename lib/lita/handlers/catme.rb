@@ -1,8 +1,6 @@
 module Lita
   module Handlers
     class Catme < Handler
-      BASE_URL = 'http://thecatapi.com/api/images/get'.freeze
-
       route(/^cat( me)?$/i, :cat_me, command: true, help: { 'cat me' => t('help.cat_me') })
       route(/^cat bomb( (\d+))?$/i, :cat_bomb, command: true, help: { 'cat bomb N' => t('help.cat_bomb') })
       route(/^cat categories$/i, :cat_categories, command: true, help: { 'cat categories' => t('help.cat_categories') })
