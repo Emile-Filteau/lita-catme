@@ -11,7 +11,7 @@ describe Lita::Handlers::Cat do
       it 'returns an array containing one cat' do
         cats = described_class.fetch
         expect(cats.length).to eq(1)
-        expect(cats.first.url).to eq("http://24.media.tumblr.com/tumblr_low6n5JHJF1qbhms5o1_500.jpg")
+        expect(cats.first.url).to eq("https://24.media.tumblr.com/tumblr_m0mjqs3zeu1r6b7kmo1_500.jpg")
       end
     end
 
@@ -38,11 +38,11 @@ describe Lita::Handlers::Cat do
       it 'returns an array containing one cat in the given category' do
         cats = described_class.fetch(category: 'boxes')
         expect(cats.length).to eq(1)
-        expect(cats.first.url).to eq("http://25.media.tumblr.com/tumblr_lwwd01DBVo1r0mbi6o1_1280.jpg")
+        expect(cats.first.url).to eq("https://28.media.tumblr.com/tumblr_lwa29aW9RO1r0mbi6o1_500.jpg")
       end
     end
 
-    context 'with category argument set to invalid value', vcr: { cassette_name: 'fetch)with_invalid_category' } do
+    context 'with category argument set to invalid value' do
       it 'instaniate no cat object' do
         expect(described_class).to receive(:new).never
         described_class.fetch(category: 'foobar')

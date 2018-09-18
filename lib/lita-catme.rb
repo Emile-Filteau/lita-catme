@@ -1,5 +1,4 @@
 require "lita"
-require 'nokogiri'
 require 'open-uri'
 
 Lita.load_locales Dir[File.expand_path(

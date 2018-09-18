@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-catme"
-  spec.version       = "0.2.0"
+  spec.version       = "0.3.0"
   spec.authors       = ["Emile Filteau"]
   spec.email         = ["emile.filteau@gmail.com"]
   spec.description   = %q(A lita handler that fetch random cat images)
@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "lita", "~> 4.7"
-  spec.add_dependency "nokogiri", "~> 1.8.4"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "pry-byebug"
