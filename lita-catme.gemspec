@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-catme"
-  spec.version       = "0.2.0"
+  spec.version       = "0.3.0"
   spec.authors       = ["Emile Filteau"]
   spec.email         = ["emile.filteau@gmail.com"]
   spec.description   = %q(A lita handler that fetch random cat images)
